@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>i.ki — hero tool (shorten + QR)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./hero-tool.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav__in">
+    <a class="brand" href="#"><img src="img/logo.png" alt="i.ki" /></a>
+    <nav class="nav__links"><a>Product</a><a>Pricing</a><a>Docs</a></nav>
+    <div class="nav__cta"><button class="btn btn--ghost">Log in</button><button class="btn btn--dark">Join waitlist</button></div>
+  </div>
+</header>
+
+<main class="hero">
+  <span class="chip"><span class="o">✦</span> <span class="o">AI-powered smart link platform</span></span>
+  <h1>One link, one QR —<br/>routed to the <span class="o">best converting</span> page</h1>
+  <p class="sub">Shorten any URL and get a scannable QR in a click. i.ki auto-routes every visitor by device, region &amp; source.</p>
+
+  <!-- THE TOOL -->
+  <section class="tool" aria-label="Create a short link or QR code">
+    <div class="seg" role="tablist">
+      <button class="seg__btn is-active" data-mode="link" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        Short link
+      </button>
+      <button class="seg__btn" data-mode="qr" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20v.01M20 20v.01M17 17h.01"/></svg>
+        QR Code
+      </button>
+    </div>
+
+    <div class="card">
+      <!-- input -->
+      <form class="inpane" id="form" autocomplete="off">
+        <div class="inpane__label">Paste a long URL</div>
+        <div class="inrow">
+          <button type="button" class="dom">i.ki/ <span class="car">▾</span></button>
+          <input id="url" class="url" type="text" placeholder="https://shop.acme.com/collections/summer" />
+          <button type="submit" class="btn btn--primary cta" id="cta"><span id="ctaLabel">Shorten</span> <span class="arr">→</span></button>
+        </div>
+        <div class="try">Try:
+          <button type="button" class="chip" data-url="https://shop.acme.com/collections/summer-sale-2026">shop.acme.com/…</button>
+          <button type="button" class="chip" data-url="https://openai.com/research/gpt-5">openai.com/research/…</button>
+          <button type="button" class="chip" data-url="https://figma.com/file/abc/i-ki-design">figma.com/file/…</button>
+        </div>
+      </form>
+
+      <!-- result -->
+      <div class="respane" id="result"></div>
+    </div>
+
+    <p class="trust">Free to try · no sign-up needed · SSL secured · global edge</p>
+  </section>
+</main>
+
+<div class="toast" id="toast">Copied</div>
+<script src="./vendor/qrcode.js"></script>
+<script src="./hero-tool.js"></script>
+</body>
+</html>
