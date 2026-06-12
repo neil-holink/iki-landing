@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Geist+Mono:wght@500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./styles.css?v=38" />
+<link rel="stylesheet" href="./styles.css?v=73" />
 </head>
 <body>
 <!-- NAV (figma-final) -->
@@ -15,21 +15,103 @@
   <div class="nav__in">
     <a class="brand" href="#"><img class="brand__img" src="img/logo.svg" alt="" />i.ki</a>
     <nav class="nav__links">
-      <div class="navitem">
-        <span class="navlink">Product <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        <div class="navdrop"><a>Link shortener</a><a>Smart routing</a><a>QR codes</a><a>Custom domains</a><a>AI tools</a></div>
+      <div class="navitem navitem--mega">
+        <span class="navlink">Feature <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <div class="nd nd--feat">
+          <div class="nd__grid4">
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+              <b>Shorten link</b><small>AI-named short links in seconds.</small>
+              <span class="ndc__art">
+                <span class="ndr"><img class="ndr__fav" src="./img/logo.svg" alt=""/><span class="ndr__tx"><i>i.ki/summer-sale</i><em>↳ shop.acme.com</em></span><span class="ndr__pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>151.8K</span></span>
+                <span class="ndr ndr--2"><img class="ndr__fav" src="./img/logo.svg" alt=""/><span class="ndr__tx"><i>i.ki/launch</i><em>↳ acme.com/new</em></span><span class="ndr__pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>100K</span></span>
+                <span class="ndr ndr--3"><img class="ndr__fav" src="./img/logo.svg" alt=""/><span class="ndr__tx"><i>i.ki/try</i><em>↳ app.acme.com</em></span><span class="ndr__pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>65.8K</span></span>
+                <span class="ndc__fade"></span>
+              </span>
+            </a>
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 21h.01M21 17v.01M17 21v.01"/></svg></span>
+              <b>QR generator</b><small>Dynamic QR you can edit anytime.</small>
+              <span class="ndc__art ndc__art--qr">
+                <span class="ndqr"><img class="ndqr__img" src="./img/qr-menu.svg" alt=""/><img class="ndqr__logo" src="./img/logo.svg" alt=""/></span>
+                <span class="ndqr__tag"><i>i.ki/menu</i><em>✦ Edit anytime</em></span>
+                <span class="ndqr__scans"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>1,284 scans today</span>
+              </span>
+            </a>
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg></span>
+              <b>Custom domain</b><small>Your brand on every short link.</small>
+              <span class="ndc__art">
+                <span class="ndab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>go.acme.com/sale</span>
+                <span class="ndr"><span class="ndr__tx"><i>go.acme.com</i><em>CNAME → i.ki</em></span><span class="ndr__ok">✓ SSL</span></span>
+                <span class="ndr ndr--2"><span class="ndr__tx"><i>link.brand.co</i><em>CNAME → i.ki</em></span><span class="ndr__ok">✓ live</span></span>
+                <span class="ndc__fade"></span>
+              </span>
+            </a>
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span>
+              <b>Analytics</b><small>Every click, broken down live.</small>
+              <span class="ndc__art ndc__art--ch">
+                <svg class="ndch" viewBox="0 0 220 110" preserveAspectRatio="none"><path d="M0,92 C25,88 45,70 70,74 C95,78 110,40 135,44 C160,48 180,20 220,14 L220,110 L0,110 Z" fill="rgba(255,90,31,.09)"/><path d="M0,92 C25,88 45,70 70,74 C95,78 110,40 135,44 C160,48 180,20 220,14" fill="none" stroke="#ff5a1f" stroke-width="2.4" stroke-linecap="round"/></svg>
+                <span class="ndch__dot"></span>
+                <span class="ndch__kpi"><b>12.5K</b><i>clicks · 7d</i><em>▲ 12%</em></span>
+              </span>
+            </a>
+          </div>
+          <div class="nd__wide2">
+            <a class="ndw">
+              <span class="ndw__tx"><b>Integrations</b><small>Enhance your short links</small></span>
+              <span class="ndw__logos"><img src="./img/logos/slack.svg" alt=""/><img src="./img/logos/si-zapier.svg" alt=""/><img src="./img/logos/si-shopify.svg" alt=""/><img src="./img/logos/google-analytics.svg" alt=""/><img src="./img/logos/si-stripe.svg" alt=""/><img src="./img/logos/si-tiktok.svg" alt=""/><img src="./img/logos/notion.svg" alt=""/></span>
+            </a>
+            <a class="ndw">
+              <span class="ndw__tx"><b>API</b><small>Unlock further capabilities</small></span>
+              <span class="ndcode"><span class="ndcode__bar"><i></i><i></i><i></i><em>cURL</em></span><code><b>POST</b> api.i.ki/links<br/><span>{ "url": "acme.com/sale" }</span><br/><u>→ 201 · i.ki/summer-sale</u></code></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <a class="navlink">Analytics</a>
-      <div class="navitem">
-        <span class="navlink">Integrations <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        <div class="navdrop"><a>All integrations</a><a>Zapier</a><a>Shopify</a><a>Slack</a><a>API &amp; webhooks</a></div>
+      <div class="navitem navitem--mega">
+        <span class="navlink">Solutions <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <div class="nd nd--sol">
+          <div class="nd__lbl">Use case</div>
+          <div class="nd__grid3">
+            <a class="ndu">
+              <span class="ndu__ic ndu__ic--o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8M8 6l4 4 4-4"/><circle cx="12" cy="16" r="1.2" fill="currentColor" stroke="none"/><path d="M5 22a7 7 0 0 1 14 0"/></svg></span>
+              <b>Creators</b><small>Grow your audience with smart links, QR &amp; insights</small>
+            </a>
+            <a class="ndu">
+              <span class="ndu__ic ndu__ic--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></svg></span>
+              <b>Business</b><small>Route every campaign click to the page that converts</small>
+            </a>
+            <a class="ndu">
+              <span class="ndu__ic ndu__ic--p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg></span>
+              <b>Enterprise</b><small>Scale, security &amp; support for serious traffic</small>
+            </a>
+          </div>
+        </div>
       </div>
-      <a class="navlink" href="#pricing">Pricing</a>
-      <a class="navlink">Docs</a>
-      <div class="navitem">
-        <span class="navlink">Customers <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        <div class="navdrop"><a>Case studies</a><a>For creators</a><a>For businesses</a><a>For agencies</a></div>
+      <span class="navlink">Pricing</span>
+      <div class="navitem navitem--mega">
+        <span class="navlink">Resources <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <div class="nd nd--res">
+          <div class="nd__lbl">Explore</div>
+          <div class="nd__grid3">
+            <a class="ndu ndu--sm">
+              <span class="ndu__ic ndu__ic--g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.6-3 4.5"/><path d="M12 18h.01"/></svg></span>
+              <b>Help center</b><small>Answers to your questions</small>
+            </a>
+            <a class="ndu ndu--sm">
+              <span class="ndu__ic ndu__ic--o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span>
+              <b>Blog</b><small>Insights and stories</small>
+            </a>
+            <a class="ndu ndu--sm">
+              <span class="ndu__ic ndu__ic--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13 5l-2 14"/></svg></span>
+              <b>API docs</b><small>Build with the i.ki API</small>
+            </a>
+          </div>
+        </div>
       </div>
+      <span class="navlink">About us</span>
     </nav>
     <div class="nav__cta"><button class="btn btn--ghost">Log in</button><button class="btn btn--dark">Get started</button></div>
   </div>
@@ -38,7 +120,7 @@
 <main>
 <!-- 1 · HERO -->
 <section class="hero2">
-  <span class="chip"><span class="o">✦</span> <span class="o">Smart link &amp; QR platform</span></span>
+  <span class="chip"><span class="o">✦</span> <span class="o">AI Smart link &amp; QR platform</span></span>
   <h1 class="hero2__h">Every click automatically goes to the<br/><span class="o">best-converting</span> destination page</h1>
   <p class="hero2__sub">i.ki reads each visitor's device, region, source, and behavior, then routes them in real time to the highest-converting page — and turns any link into a branded short link or QR code in seconds.</p>
   <div class="h2seg" id="h2seg">
@@ -59,15 +141,23 @@
   <div class="pv__tabs" id="pvTabs">
     <button class="pvtab is-on" data-i="0">
       <span class="pvtab__ic pvtab__ic--ai"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.6 5.2L19 9l-5.4 1.8L12 16l-1.6-5.2L5 9l5.4-1.8z"/></svg></span>
-      <span class="pvtab__t"><b>AI Suggest &amp; Shorten</b><i>Paste a link → 3 smart names</i></span>
+      <span class="pvtab__t"><b>AI Suggest &amp; Shorten</b></span>
     </button>
     <button class="pvtab" data-i="1">
-      <span class="pvtab__ic pvtab__ic--an"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span>
-      <span class="pvtab__t"><b>Analytics</b><i>Every click, broken down live</i></span>
+      <span class="pvtab__ic pvtab__ic--qr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 21h.01M21 17v.01M17 21v.01"/></svg></span>
+      <span class="pvtab__t"><b>QR Codes</b></span>
     </button>
     <button class="pvtab" data-i="2">
-      <span class="pvtab__ic pvtab__ic--af"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-      <span class="pvtab__t"><b>Affiliate</b><i>Approve partners → revenue</i></span>
+      <span class="pvtab__ic pvtab__ic--lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+      <span class="pvtab__t"><b>Manage links</b></span>
+    </button>
+    <button class="pvtab" data-i="3">
+      <span class="pvtab__ic pvtab__ic--mg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.4"/><circle cx="19" cy="6" r="2.4"/><circle cx="19" cy="18" r="2.4"/><path d="M7.3 11 16.7 6.6M7.3 13l9.4 4.4"/></svg></span>
+      <span class="pvtab__t"><b>Smart routing</b></span>
+    </button>
+    <button class="pvtab" data-i="4">
+      <span class="pvtab__ic pvtab__ic--an"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span>
+      <span class="pvtab__t"><b>Analytics</b></span>
     </button>
   </div>
   <div class="pv__win" id="pvWin">
@@ -82,9 +172,9 @@
   <h2 class="g__title">Enterprise-grade infrastructure built for <span class="o">global</span> growth</h2>
   <p class="g__sub">Global nodes, elastic architecture, and high-availability<br/>safeguards ensure every redirect is stable, fast, and secure.</p>
   <div class="g__metrics">
-    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><span class="gmetric__t"><b>170+</b><small>Short links created</small></span></div>
-    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span><span class="gmetric__t"><b>2.7B+</b><small>Click events tracked</small></span></div>
-    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg></span><span class="gmetric__t"><b>170+</b><small>Countries and regions</small></span></div>
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="gmetric__t"><b id="gPeople">1,000</b><small>People who use i.ki</small></span></div>
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><span class="gmetric__t"><b id="gLinks">50,000</b><small>Short links created</small></span></div>
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span><span class="gmetric__t"><b id="gClicks">100,000</b><small>Click events tracked</small></span></div>
     <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg></span><span class="gmetric__t"><b id="gMs">38ms</b><small>Global average resolve</small></span></div>
   </div>
   <div class="g__main">
@@ -94,11 +184,11 @@
         <canvas class="g__globecanvas" aria-label="Interactive globe — drag to spin"></canvas>
         <span class="g__globehint">Drag to spin</span>
       </div>
-      <div class="glat" style="left:calc(50% - 70px);top:10.6%"><div class="glat__top"><span class="glat__city">London Node</span><span class="glat__ind"><span class="glat__dot"></span></span></div><div class="glat__bot"><b>22ms</b><span class="glat__st">STABLE</span></div></div>
-      <div class="glat" style="left:calc(50% + 130px);top:26.4%"><div class="glat__top"><span class="glat__city">New York Core</span><span class="glat__ind glat__ind--flag"><svg class="glat__flag" viewBox="0 0 20 14" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="20" height="14" fill="#fff"/><g fill="#b22234"><rect width="20" height="1.077"/><rect y="2.154" width="20" height="1.077"/><rect y="4.308" width="20" height="1.077"/><rect y="6.462" width="20" height="1.077"/><rect y="8.615" width="20" height="1.077"/><rect y="10.769" width="20" height="1.077"/><rect y="12.923" width="20" height="1.077"/></g><rect width="9" height="7.538" fill="#3c3b6e"/><g fill="#fff"><circle cx="1.5" cy="1.2" r=".42"/><circle cx="3.5" cy="1.2" r=".42"/><circle cx="5.5" cy="1.2" r=".42"/><circle cx="7.4" cy="1.2" r=".42"/><circle cx="2.5" cy="2.7" r=".42"/><circle cx="4.5" cy="2.7" r=".42"/><circle cx="6.5" cy="2.7" r=".42"/><circle cx="1.5" cy="4.2" r=".42"/><circle cx="3.5" cy="4.2" r=".42"/><circle cx="5.5" cy="4.2" r=".42"/><circle cx="7.4" cy="4.2" r=".42"/><circle cx="2.5" cy="5.7" r=".42"/><circle cx="4.5" cy="5.7" r=".42"/><circle cx="6.5" cy="5.7" r=".42"/></g></svg></span></div><div class="glat__bot"><b>12ms</b><span class="glat__st">STABLE</span></div></div>
-      <div class="glat" style="right:calc(50% + 145px);top:31.9%"><div class="glat__top"><span class="glat__city">Tokyo Edge</span><span class="glat__ind"><span class="glat__dot"></span></span></div><div class="glat__bot"><b>22ms</b><span class="glat__st">STABLE</span></div></div>
-      <div class="glat" style="right:calc(50% + 99px);top:71.2%"><div class="glat__top"><span class="glat__city">London Node</span><span class="glat__ind"><span class="glat__dot"></span></span></div><div class="glat__bot"><b>22ms</b><span class="glat__st">STABLE</span></div></div>
-      <div class="glat" style="left:calc(50% + 128px);top:64.7%"><div class="glat__top"><span class="glat__city">Tokyo Edge</span><span class="glat__ind"><span class="glat__dot"></span></span></div><div class="glat__bot"><b>22ms</b><span class="glat__st">STABLE</span></div></div>
+      <div class="glat" style="left:calc(50% - 70px);top:10.6%"><div class="glat__top"><span class="glat__city">London Node</span><span class="glat__ind glat__ind--flag"><svg class="glat__flag" viewBox="0 0 20 14" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="20" height="14" fill="#012169"/><path d="M0 0 L20 14 M20 0 L0 14" stroke="#fff" stroke-width="2.8"/><path d="M0 0 L20 14 M20 0 L0 14" stroke="#C8102E" stroke-width="1.1"/><rect x="8.2" width="3.6" height="14" fill="#fff"/><rect y="5.2" width="20" height="3.6" fill="#fff"/><rect x="9" width="2" height="14" fill="#C8102E"/><rect y="6" width="20" height="2" fill="#C8102E"/></svg></span></div><div class="glat__bot"><b>99.99%</b><span class="glat__st">STABLE</span></div></div>
+      <div class="glat" style="left:calc(50% + 130px);top:26.4%"><div class="glat__top"><span class="glat__city">New York Core</span><span class="glat__ind glat__ind--flag"><svg class="glat__flag" viewBox="0 0 20 14" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="20" height="14" fill="#fff"/><g fill="#b22234"><rect width="20" height="1.077"/><rect y="2.154" width="20" height="1.077"/><rect y="4.308" width="20" height="1.077"/><rect y="6.462" width="20" height="1.077"/><rect y="8.615" width="20" height="1.077"/><rect y="10.769" width="20" height="1.077"/><rect y="12.923" width="20" height="1.077"/></g><rect width="9" height="7.538" fill="#3c3b6e"/><g fill="#fff"><circle cx="1.5" cy="1.2" r=".42"/><circle cx="3.5" cy="1.2" r=".42"/><circle cx="5.5" cy="1.2" r=".42"/><circle cx="7.4" cy="1.2" r=".42"/><circle cx="2.5" cy="2.7" r=".42"/><circle cx="4.5" cy="2.7" r=".42"/><circle cx="6.5" cy="2.7" r=".42"/><circle cx="1.5" cy="4.2" r=".42"/><circle cx="3.5" cy="4.2" r=".42"/><circle cx="5.5" cy="4.2" r=".42"/><circle cx="7.4" cy="4.2" r=".42"/><circle cx="2.5" cy="5.7" r=".42"/><circle cx="4.5" cy="5.7" r=".42"/><circle cx="6.5" cy="5.7" r=".42"/></g></svg></span></div><div class="glat__bot"><b>12ms</b><span class="glat__st">FAST</span></div></div>
+      <div class="glat" style="right:calc(50% + 145px);top:31.9%"><div class="glat__top"><span class="glat__city">Tokyo Edge</span><span class="glat__ind glat__ind--ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span></div><div class="glat__bot"><b>TLS 1.3</b><span class="glat__st">SECURE</span></div></div>
+      <div class="glat" style="right:calc(50% + 99px);top:71.2%"><div class="glat__top"><span class="glat__city">Frankfurt Node</span><span class="glat__ind glat__ind--ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span></div><div class="glat__bot"><b>auto-scale</b><span class="glat__st">ELASTIC</span></div></div>
+      <div class="glat" style="left:calc(50% + 128px);top:64.7%"><div class="glat__top"><span class="glat__city">Singapore Edge</span><span class="glat__ind glat__ind--ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5.5V11c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5.5z"/><path d="M9 11.5l2 2 4-4.5"/></svg></span></div><div class="glat__bot"><b>failover &lt;1s</b><span class="glat__st">RESILIENT</span></div></div>
     </div>
     <aside class="g__live">
       <div class="g__live-h"><span class="g__live-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle class="gp" cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4"/><path d="M4.9 19.1a10 10 0 0 1 0-14.2M19.1 4.9a10 10 0 0 1 0 14.2"/></svg></span>LIVE GLOBAL TRAFFIC</div>
@@ -110,7 +200,7 @@
 <!-- 3 · SMART ROUTER -->
 <section class="rt">
   <div class="rt__head">
-    <span class="rt__eyebrow">AI Smart Routing</span>
+    <span class="chip chip--sec"><span class="o">✦</span> <span class="o">AI Smart Routing</span></span>
     <h2 class="rt__title">One smart link. The right destination.<br/>In <span class="o">milliseconds</span>.</h2>
     <p class="rt__sub">i.ki reads each visitor's device, country, language, and source — then deep-links them straight to the best page and redirects in a few milliseconds.</p>
   </div>
@@ -165,6 +255,18 @@
         </div>
         <div class="conn__nodes" id="connNodes"></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4b · CAPABILITIES — dub-style auto-cycling feature cards -->
+<section class="fx">
+  <div class="fx__in">
+    <h2 class="fx__title">All the link <span class="o">capabilities</span><br/>growth teams need</h2>
+    <p class="fx__sub">From AI-read analytics to enterprise-grade control — built into every link from day one.</p>
+    <div class="fx__card" id="fxCard">
+      <div class="fx__stage" id="fxStage"></div>
+      <div class="fx__tabs" id="fxTabs"></div>
     </div>
   </div>
 </section>
@@ -238,7 +340,6 @@
     <h2 class="ctaband__h">Move from ordinary short links into<br/>the era of <span class="ctaband__ai">AI-powered</span> smart growth</h2>
     <div class="ctaband__btns">
       <a class="ctaband__btn ctaband__btn--primary" href="#">Start for Free <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      <a class="ctaband__btn ctaband__btn--light" href="#">Book a Demo</a>
     </div>
   </div>
 </section>
@@ -271,12 +372,13 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard</div>
 <script src="./vendor/qrcode.js"></script>
-<script src="./hero2.js?v=9"></script>
-<script src="./preview.js?v=9"></script>
+<script src="./hero2.js?v=16"></script>
+<script src="./preview.js?v=22"></script>
+<script src="./fx.js?v=6"></script>
 <script src="./conn.js"></script>
-<script src="./pricing.js?v=4"></script>
+<script src="./pricing.js?v=7"></script>
 <script src="./router.js?v=7"></script>
-<script src="./globe.js?v=4"></script>
+<script src="./globe.js?v=10"></script>
 <script type="module" src="./globe3d.js?v=1"></script>
 <script src="./testi.js?v=5"></script>
 </body>
