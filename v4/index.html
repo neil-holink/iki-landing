@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>i.ki — Final</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Geist+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./styles.css?v=77" />
+</head>
+<body>
+<!-- NAV (figma-final) -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a class="brand" href="#"><img class="brand__img" src="img/logo.svg" alt="" />i.ki</a>
+    <nav class="nav__links">
+      <div class="navitem navitem--mega">
+        <span class="navlink">Feature <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <div class="nd nd--feat">
+          <div class="nd__grid4">
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+              <b>Shorten link</b><small>AI-named short links in seconds.</small>
+              <span class="ndc__art">
+                <span class="ndr"><img class="ndr__fav" src="./img/logo.svg" alt=""/><span class="ndr__tx"><i>i.ki/summer-sale</i><em>↳ shop.acme.com</em></span><span class="ndr__pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>151.8K</span></span>
+                <span class="ndr ndr--2"><img class="ndr__fav" src="./img/logo.svg" alt=""/><span class="ndr__tx"><i>i.ki/launch</i><em>↳ acme.com/new</em></span><span class="ndr__pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>100K</span></span>
+                <span class="ndr ndr--3"><img class="ndr__fav" src="./img/logo.svg" alt=""/><span class="ndr__tx"><i>i.ki/try</i><em>↳ app.acme.com</em></span><span class="ndr__pill"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>65.8K</span></span>
+                <span class="ndc__fade"></span>
+              </span>
+            </a>
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 21h.01M21 17v.01M17 21v.01"/></svg></span>
+              <b>QR generator</b><small>Dynamic QR you can edit anytime.</small>
+              <span class="ndc__art ndc__art--qr">
+                <span class="ndqr"><img class="ndqr__img" src="./img/qr-menu.svg" alt=""/><img class="ndqr__logo" src="./img/logo.svg" alt=""/></span>
+                <span class="ndqr__tag"><i>i.ki/menu</i><em>✦ Edit anytime</em></span>
+                <span class="ndqr__scans"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg>1,284 scans today</span>
+              </span>
+            </a>
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18"/></svg></span>
+              <b>Custom domain</b><small>Your brand on every short link.</small>
+              <span class="ndc__art">
+                <span class="ndab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>go.acme.com/sale</span>
+                <span class="ndr"><span class="ndr__tx"><i>go.acme.com</i><em>CNAME → i.ki</em></span><span class="ndr__ok">✓ SSL</span></span>
+                <span class="ndr ndr--2"><span class="ndr__tx"><i>link.brand.co</i><em>CNAME → i.ki</em></span><span class="ndr__ok">✓ live</span></span>
+                <span class="ndc__fade"></span>
+              </span>
+            </a>
+            <a class="ndc">
+              <span class="ndc__ic ndc__ic--p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span>
+              <b>Analytics</b><small>Every click, broken down live.</small>
+              <span class="ndc__art ndc__art--ch">
+                <svg class="ndch" viewBox="0 0 220 110" preserveAspectRatio="none"><path d="M0,92 C25,88 45,70 70,74 C95,78 110,40 135,44 C160,48 180,20 220,14 L220,110 L0,110 Z" fill="rgba(255,90,31,.09)"/><path d="M0,92 C25,88 45,70 70,74 C95,78 110,40 135,44 C160,48 180,20 220,14" fill="none" stroke="#ff5a1f" stroke-width="2.4" stroke-linecap="round"/></svg>
+                <span class="ndch__dot"></span>
+                <span class="ndch__kpi"><b>12.5K</b><i>clicks · 7d</i><em>▲ 12%</em></span>
+              </span>
+            </a>
+          </div>
+          <div class="nd__wide2">
+            <a class="ndw">
+              <span class="ndw__tx"><b>Integrations</b><small>Enhance your short links</small></span>
+              <span class="ndw__logos"><img src="./img/logos/slack.svg" alt=""/><img src="./img/logos/si-zapier.svg" alt=""/><img src="./img/logos/si-shopify.svg" alt=""/><img src="./img/logos/google-analytics.svg" alt=""/><img src="./img/logos/si-stripe.svg" alt=""/><img src="./img/logos/si-tiktok.svg" alt=""/><img src="./img/logos/notion.svg" alt=""/></span>
+            </a>
+            <a class="ndw">
+              <span class="ndw__tx"><b>API</b><small>Unlock further capabilities</small></span>
+              <span class="ndcode"><span class="ndcode__bar"><i></i><i></i><i></i><em>cURL</em></span><code><b>POST</b> api.i.ki/links<br/><span>{ "url": "acme.com/sale" }</span><br/><u>→ 201 · i.ki/summer-sale</u></code></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navitem navitem--mega">
+        <span class="navlink">Solutions <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <div class="nd nd--sol">
+          <div class="nd__lbl">Use case</div>
+          <div class="nd__grid3">
+            <a class="ndu">
+              <span class="ndu__ic ndu__ic--o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8M8 6l4 4 4-4"/><circle cx="12" cy="16" r="1.2" fill="currentColor" stroke="none"/><path d="M5 22a7 7 0 0 1 14 0"/></svg></span>
+              <b>Creators</b><small>Grow your audience with smart links, QR &amp; insights</small>
+            </a>
+            <a class="ndu">
+              <span class="ndu__ic ndu__ic--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></svg></span>
+              <b>Business</b><small>Route every campaign click to the page that converts</small>
+            </a>
+            <a class="ndu">
+              <span class="ndu__ic ndu__ic--p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg></span>
+              <b>Enterprise</b><small>Scale, security &amp; support for serious traffic</small>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="navlink">Pricing</span>
+      <div class="navitem navitem--mega">
+        <span class="navlink">Resources <svg class="navcar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <div class="nd nd--res">
+          <div class="nd__lbl">Explore</div>
+          <div class="nd__grid3">
+            <a class="ndu ndu--sm">
+              <span class="ndu__ic ndu__ic--g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.6-3 4.5"/><path d="M12 18h.01"/></svg></span>
+              <b>Help center</b><small>Answers to your questions</small>
+            </a>
+            <a class="ndu ndu--sm">
+              <span class="ndu__ic ndu__ic--o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></span>
+              <b>Blog</b><small>Insights and stories</small>
+            </a>
+            <a class="ndu ndu--sm">
+              <span class="ndu__ic ndu__ic--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13 5l-2 14"/></svg></span>
+              <b>API docs</b><small>Build with the i.ki API</small>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="navlink">About us</span>
+    </nav>
+    <div class="nav__cta"><button class="btn btn--ghost">Log in</button><button class="btn btn--dark">Get started</button></div>
+  </div>
+</header>
+
+<main>
+<!-- 1 · HERO -->
+<section class="hero2">
+  <span class="chip"><span class="o">✦</span> <span class="o">AI Smart link &amp; QR platform</span></span>
+  <h1 class="hero2__h">Every click automatically goes to the<br/><span class="o">best-converting</span> destination page</h1>
+  <p class="hero2__sub">i.ki reads each visitor's device, region, source, and behavior, then routes them in real time to the highest-converting page — and turns any link into a branded short link or QR code in seconds.</p>
+  <div class="h2seg" id="h2seg">
+    <span class="h2seg__sl" id="h2segSl"></span>
+    <button class="h2seg__b is-on" data-m="link" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Short link</button>
+    <button class="h2seg__b" data-m="qr" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/></svg> QR Code</button>
+  </div>
+  <div class="h2card" id="h2card"></div>
+  <div class="h2trust" id="h2trust"></div>
+</section>
+
+<!-- 1b · PRODUCT PREVIEW — dub-style tabbed, step-by-step animations (NEW) -->
+<section class="pv">
+  <div class="pv__head">
+    <h2 class="pv__title">See i.ki <span class="o">work</span>, step by step</h2>
+    <p class="pv__sub">From a smart link to live revenue — watch each i.ki workflow play out in real time.</p>
+  </div>
+  <div class="pv__tabs" id="pvTabs">
+    <button class="pvtab is-on" data-i="0">
+      <span class="pvtab__ic pvtab__ic--ai"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.6 5.2L19 9l-5.4 1.8L12 16l-1.6-5.2L5 9l5.4-1.8z"/></svg></span>
+      <span class="pvtab__t"><b>AI Suggest &amp; Shorten</b></span>
+    </button>
+    <button class="pvtab" data-i="1">
+      <span class="pvtab__ic pvtab__ic--qr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 21h.01M21 17v.01M17 21v.01"/></svg></span>
+      <span class="pvtab__t"><b>QR Codes</b></span>
+    </button>
+    <button class="pvtab" data-i="2">
+      <span class="pvtab__ic pvtab__ic--lk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+      <span class="pvtab__t"><b>Manage links</b></span>
+    </button>
+    <button class="pvtab" data-i="3">
+      <span class="pvtab__ic pvtab__ic--mg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.4"/><circle cx="19" cy="6" r="2.4"/><circle cx="19" cy="18" r="2.4"/><path d="M7.3 11 16.7 6.6M7.3 13l9.4 4.4"/></svg></span>
+      <span class="pvtab__t"><b>Smart routing</b></span>
+    </button>
+    <button class="pvtab" data-i="4">
+      <span class="pvtab__ic pvtab__ic--an"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span>
+      <span class="pvtab__t"><b>Analytics</b></span>
+    </button>
+  </div>
+  <div class="pv__win" id="pvWin">
+    <div class="pv__chrome"><i class="pvdot r"></i><i class="pvdot y"></i><i class="pvdot g"></i><span class="pv__url" id="pvUrl">app.i.ki / links / new</span><span class="pv__live"><span class="pv__livedot"></span>Live demo</span></div>
+    <div class="pv__stage" id="pvStage"></div>
+    <span class="pv__cursor" id="pvCursor"></span>
+  </div>
+</section>
+
+<!-- 2 · GLOBE — Enterprise infra -->
+<section class="gsec">
+  <h2 class="g__title">Enterprise-grade infrastructure built for <span class="o">global</span> growth</h2>
+  <p class="g__sub">Global nodes, elastic architecture, and high-availability<br/>safeguards ensure every redirect is stable, fast, and secure.</p>
+  <div class="g__metrics">
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="gmetric__t"><b id="gPeople">1,000</b><small>People who use i.ki</small></span></div>
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><span class="gmetric__t"><b id="gLinks">50,000</b><small>Short links created</small></span></div>
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></span><span class="gmetric__t"><b id="gClicks">100,000</b><small>Click events tracked</small></span></div>
+    <div class="gmetric"><span class="gmetric__ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 2 4 13h6l-1 9 8-12h-6z"/></svg></span><span class="gmetric__t"><b id="gMs">38ms</b><small>Global average resolve</small></span></div>
+  </div>
+  <div class="g__main">
+    <div class="g__globe">
+      <div class="g__globe-inner">
+        <span class="g__glow"></span>
+        <canvas class="g__globecanvas" aria-label="Interactive globe — drag to spin"></canvas>
+        <span class="g__globehint">Drag to spin</span>
+      </div>
+      <div class="glat" style="left:calc(50% - 70px);top:10.6%"><div class="glat__top"><span class="glat__city">London Node</span><span class="glat__ind glat__ind--flag"><svg class="glat__flag" viewBox="0 0 20 14" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="20" height="14" fill="#012169"/><path d="M0 0 L20 14 M20 0 L0 14" stroke="#fff" stroke-width="2.8"/><path d="M0 0 L20 14 M20 0 L0 14" stroke="#C8102E" stroke-width="1.1"/><rect x="8.2" width="3.6" height="14" fill="#fff"/><rect y="5.2" width="20" height="3.6" fill="#fff"/><rect x="9" width="2" height="14" fill="#C8102E"/><rect y="6" width="20" height="2" fill="#C8102E"/></svg></span></div><div class="glat__bot"><b>99.99%</b><span class="glat__st">STABLE</span></div></div>
+      <div class="glat" style="left:calc(50% + 130px);top:26.4%"><div class="glat__top"><span class="glat__city">New York Core</span><span class="glat__ind glat__ind--flag"><svg class="glat__flag" viewBox="0 0 20 14" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="20" height="14" fill="#fff"/><g fill="#b22234"><rect width="20" height="1.077"/><rect y="2.154" width="20" height="1.077"/><rect y="4.308" width="20" height="1.077"/><rect y="6.462" width="20" height="1.077"/><rect y="8.615" width="20" height="1.077"/><rect y="10.769" width="20" height="1.077"/><rect y="12.923" width="20" height="1.077"/></g><rect width="9" height="7.538" fill="#3c3b6e"/><g fill="#fff"><circle cx="1.5" cy="1.2" r=".42"/><circle cx="3.5" cy="1.2" r=".42"/><circle cx="5.5" cy="1.2" r=".42"/><circle cx="7.4" cy="1.2" r=".42"/><circle cx="2.5" cy="2.7" r=".42"/><circle cx="4.5" cy="2.7" r=".42"/><circle cx="6.5" cy="2.7" r=".42"/><circle cx="1.5" cy="4.2" r=".42"/><circle cx="3.5" cy="4.2" r=".42"/><circle cx="5.5" cy="4.2" r=".42"/><circle cx="7.4" cy="4.2" r=".42"/><circle cx="2.5" cy="5.7" r=".42"/><circle cx="4.5" cy="5.7" r=".42"/><circle cx="6.5" cy="5.7" r=".42"/></g></svg></span></div><div class="glat__bot"><b>12ms</b><span class="glat__st">FAST</span></div></div>
+      <div class="glat" style="right:calc(50% + 145px);top:31.9%"><div class="glat__top"><span class="glat__city">Tokyo Edge</span><span class="glat__ind glat__ind--ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span></div><div class="glat__bot"><b>TLS 1.3</b><span class="glat__st">SECURE</span></div></div>
+      <div class="glat" style="right:calc(50% + 99px);top:71.2%"><div class="glat__top"><span class="glat__city">Frankfurt Node</span><span class="glat__ind glat__ind--ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg></span></div><div class="glat__bot"><b>auto-scale</b><span class="glat__st">ELASTIC</span></div></div>
+      <div class="glat" style="left:calc(50% + 128px);top:64.7%"><div class="glat__top"><span class="glat__city">Singapore Edge</span><span class="glat__ind glat__ind--ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5.5V11c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5.5z"/><path d="M9 11.5l2 2 4-4.5"/></svg></span></div><div class="glat__bot"><b>failover &lt;1s</b><span class="glat__st">RESILIENT</span></div></div>
+    </div>
+    <aside class="g__live">
+      <div class="g__live-h"><span class="g__live-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle class="gp" cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M7.8 16.2a6 6 0 0 1 0-8.4M16.2 7.8a6 6 0 0 1 0 8.4"/><path d="M4.9 19.1a10 10 0 0 1 0-14.2M19.1 4.9a10 10 0 0 1 0 14.2"/></svg></span>LIVE GLOBAL TRAFFIC</div>
+      <ul class="g__live-list" id="gFeed"></ul>
+    </aside>
+  </div>
+</section>
+
+<!-- 3 · SMART ROUTER -->
+<section class="rt">
+  <div class="rt__head">
+    <span class="chip chip--sec"><span class="o">✦</span> <span class="o">AI Smart Routing</span></span>
+    <h2 class="rt__title">One smart link. The right destination.<br/>In <span class="o">milliseconds</span>.</h2>
+    <p class="rt__sub">i.ki reads each visitor's device, country, language, and source — then deep-links them straight to the best page and redirects in a few milliseconds.</p>
+  </div>
+  <div class="rt__stage" id="rtStage">
+    <span class="rt__visitor" id="rtVisitor"></span>
+    <svg class="rt__wires" id="rtWires" viewBox="0 0 920 500" aria-hidden="true"></svg>
+    <span class="rt__packet" id="rtPacket"></span>
+    <div class="rt__core" id="rtCore">
+      <span class="rt__core-mark">iK</span>
+      <span class="rt__core-label">Smart Router</span>
+    </div>
+    <span class="rt__speed" id="rtSpeed"></span>
+    <div class="rt__nodes" id="rtNodes"></div>
+  </div>
+  <div class="rt__cmp">
+    <span class="rt__cmpbad">Ordinary shortener: 1 link → 1 URL for everyone</span>
+    <span class="rt__cmpvs">vs</span>
+    <span class="rt__cmpgood">i.ki: 1 link → the <b>right</b> URL per visitor</span>
+  </div>
+</section>
+
+<!-- 4 · CONNECT — integration hub -->
+<section class="conn">
+  <div class="conn__in">
+    <div class="conn__left">
+      <span class="conn__eyebrow">✦ AI tracks clicks, signups, and sales.</span>
+      <h2 class="conn__title">Seamlessly <span class="o">connect</span><br/>your growth ecosystem</h2>
+      <p class="conn__sub">Plug i.ki into the tools you already run on. Every click, signup, and sale flows straight into your marketing, analytics, and automation stack — no glue code.</p>
+      <div class="conn__pills" id="connPills">
+        <button class="cpill is-active" data-cat="ads"><span class="cpill__dot"></span>Advertising &amp; Analytics</button>
+        <button class="cpill" data-cat="auto"><span class="cpill__dot"></span>Automation &amp; Collaboration</button>
+        <button class="cpill" data-cat="dev"><span class="cpill__dot"></span>Developer Capabilities</button>
+      </div>
+      <div class="conn__event" id="connEvent" aria-live="polite">
+        <span class="conn__pulse"></span><span class="conn__evt-txt" id="connEvtTxt">Conversion · $48.00 &nbsp;→&nbsp; synced to Segment</span>
+      </div>
+      <div class="conn__ctas">
+        <a class="conn__cta" href="#">View 100+ integrations
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a class="conn__cta2" href="#">API documentation</a>
+      </div>
+    </div>
+    <div class="conn__stage">
+      <div class="conn__hub" id="connHub">
+        <svg class="conn__wires" id="connWires" viewBox="0 0 520 520" aria-hidden="true"></svg>
+        <div class="conn__core" id="connCore">
+          <span class="conn__core-glow"></span>
+          <span class="conn__core-mark">iK</span>
+          <span class="conn__ring conn__ring--1"></span>
+          <span class="conn__ring conn__ring--2"></span>
+        </div>
+        <div class="conn__nodes" id="connNodes"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4b · CAPABILITIES — dub-style auto-cycling feature cards -->
+<section class="fx">
+  <div class="fx__in">
+    <h2 class="fx__title">All the link <span class="o">capabilities</span><br/>growth teams need</h2>
+    <p class="fx__sub">From AI-read analytics to enterprise-grade control — built into every link from day one.</p>
+    <div class="fx__card" id="fxCard">
+      <div class="fx__stage" id="fxStage"></div>
+      <div class="fx__tabs" id="fxTabs"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · TRUSTED BY — auto-moving logo marquee -->
+<section class="trust">
+  <h2 class="trust__h">TRUSTED BY <span class="o">LEADING</span> COMPANIES</h2>
+  <div class="trust__mq">
+    <div class="trust__track">
+      <span class="trust__logo trust__logo--1">BIS.ID</span>
+      <span class="trust__logo trust__logo--2">AQSA<small>CONSTRUCTIONS</small></span>
+      <span class="trust__logo trust__logo--3">sustain</span>
+      <span class="trust__logo trust__logo--4">Numerous<span class="o">.ai</span></span>
+      <span class="trust__logo trust__logo--5">Healthy One</span>
+      <span class="trust__logo trust__logo--1" aria-hidden="true">BIS.ID</span>
+      <span class="trust__logo trust__logo--2" aria-hidden="true">AQSA<small>CONSTRUCTIONS</small></span>
+      <span class="trust__logo trust__logo--3" aria-hidden="true">sustain</span>
+      <span class="trust__logo trust__logo--4" aria-hidden="true">Numerous<span class="o">.ai</span></span>
+      <span class="trust__logo trust__logo--5" aria-hidden="true">Healthy One</span>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · TESTIMONIALS -->
+<section class="tst">
+  <div class="tst__head">
+    <h2 class="tst__title">Continuously trusted by<br/>growth teams <span class="o">worldwide</span></h2>
+    <p class="tst__sub">Helped a brand increase conversion rate by 37%, improve ad ROI<br/>by 22%, and reduce global landing page bounce rate by 31%</p>
+  </div>
+  <div class="tst__wall">
+    <div class="tst__col--marquee"><div class="tmarq"><div class="tmarq__track tmarq__track--down" id="tmarqL"></div></div></div>
+    <div class="tst__col--video"><div class="tvidc" id="tvidc"></div></div>
+    <div class="tst__col--marquee"><div class="tmarq"><div class="tmarq__track tmarq__track--up" id="tmarqR"></div></div></div>
+  </div>
+</section>
+
+<!-- 7 · PRICING -->
+<section class="pr" id="pricing">
+  <div class="pr__head">
+    <h2 class="pr__title">Plans and <span class="o">pricing</span></h2>
+    <p class="pr__sub">Start free, scale when you're ready — pay for the depth, not the volume.</p>
+    <div class="pr__toggle" id="prToggle">
+      <span class="pr__slider" id="prSlider"></span>
+      <button class="prtg is-on" data-b="m">Monthly</button>
+      <button class="prtg" data-b="y">Yearly <span class="prtg__save">Save 20%</span></button>
+    </div>
+  </div>
+  <div class="pr__cards" id="prCards"></div>
+  <div class="pr__trust" id="prTrust"></div>
+  <div class="pr__comparewrap">
+    <div class="pr__table" id="prTable"></div>
+  </div>
+</section>
+
+<!-- 8 · FAQ -->
+<section class="faq">
+  <h2 class="faq__title">Frequently <span class="o">asked</span> questions</h2>
+  <div class="faq__list">
+    <details class="faq__item" open><summary>How does AI routing actually work?<span class="faq__pm"></span></summary><div class="faq__a">i.ki evaluates each click's device, geo, language, referrer, and behavioral signals against your rules, then sends the visitor to the destination most likely to convert — adjusting automatically as performance data accumulates.</div></details>
+    <details class="faq__item"><summary>Is i.ki GDPR compliant?<span class="faq__pm"></span></summary><div class="faq__a">Yes. i.ki is GDPR-ready with EU data processing, a DPA available on request, and we never sell personal data.</div></details>
+    <details class="faq__item"><summary>Can I use my own custom domain?<span class="faq__pm"></span></summary><div class="faq__a">Absolutely. Connect a branded domain (e.g. go.yourbrand.com) on Pro and above, with automatic SSL provisioning.</div></details>
+    <details class="faq__item"><summary>Do you have an API?<span class="faq__pm"></span></summary><div class="faq__a">Yes — a full REST API plus webhooks let you create links, fetch analytics, and automate your workflows.</div></details>
+    <details class="faq__item"><summary>Can I migrate from Bitly or Rebrandly?<span class="faq__pm"></span></summary><div class="faq__a">Yes. Import your existing links and custom domains in a few clicks — your old links keep working throughout.</div></details>
+    <details class="faq__item"><summary>What uptime can I expect?<span class="faq__pm"></span></summary><div class="faq__a">99.99% uptime, backed by a global edge network and a formal SLA on Enterprise plans.</div></details>
+  </div>
+</section>
+
+<!-- 9 · CTA -->
+<section class="ctaband">
+  <div class="ctaband__card">
+    <h2 class="ctaband__h">Move from ordinary short links into<br/>the era of <span class="ctaband__ai">AI-powered</span> smart growth</h2>
+    <div class="ctaband__btns">
+      <a class="ctaband__btn ctaband__btn--primary" href="#">Start for Free <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FOOTER -->
+<footer class="ft">
+  <div class="ft__in">
+    <div class="ft__brand">
+      <span class="ft__brandmark"><img class="ft__ico" src="img/logo.svg" alt="" />i.ki</span>
+      <div class="ft__social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.4-3H14V4.5c0-.8.2-1.3 1.4-1.3H17V.6C16.6.5 15.6.5 14.5.5 12.1.5 10.5 2 10.5 4.6V6H8v3h2.5v8H14V9z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h3l-7 8 8 12h-6l-5-6-5 6H1l8-9L1 2h6l4 5 5-5z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM0 8h5v13H0V8zm7.5 0H12v1.8h.1c.6-1.1 2-2.2 4.1-2.2 4.4 0 5.2 2.9 5.2 6.6V21h-5v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21h-5V8z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.4 1-1.2 1.8-2.2 2.2-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-1-.4-1.8-1.2-2.2-2.2-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.4-1 1.2-1.8 2.2-2.2.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 6.4a5.6 5.6 0 1 0 0 11.2 5.6 5.6 0 0 0 0-11.2zm0 9.2a3.6 3.6 0 1 1 0-7.2 3.6 3.6 0 0 1 0 7.2zM18.4 6.2a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0z"/></svg></a>
+      </div>
+    </div>
+    <div class="ft__cols">
+      <div class="ft__col"><h4>Products</h4><a href="#">Short links</a><a href="#">QR codes</a><a href="#">Link-in-bio</a><a href="#">Analytics</a></div>
+      <div class="ft__col"><h4>Solutions</h4><a href="#">E-commerce &amp; retail</a><a href="#">Digital marketing</a><a href="#">Developers</a></div>
+      <div class="ft__col"><h4>Resources</h4><a href="#">Help center</a><a href="#">API docs</a><a href="#">Official blog</a></div>
+      <div class="ft__col"><h4>Legal</h4><a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Cookie policy</a></div>
+    </div>
+  </div>
+  <div class="ft__bar">
+    <span>© 2026 i.ki all rights reserved.</span>
+    <span class="ft__legal"><a href="#">License</a><i></i>PT. IKI Indonesia</span>
+  </div>
+</footer>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard</div>
+<script src="./vendor/qrcode.js"></script>
+<script src="./hero2.js?v=16"></script>
+<script src="./preview.js?v=22"></script>
+<script src="./fx.js?v=6"></script>
+<script src="./conn.js"></script>
+<script src="./pricing.js?v=11"></script>
+<script src="./router.js?v=7"></script>
+<script src="./globe.js?v=10"></script>
+<script type="module" src="./globe3d.js?v=1"></script>
+<script src="./testi.js?v=5"></script>
+</body>
+</html>
